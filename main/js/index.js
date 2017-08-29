@@ -1,5 +1,6 @@
 Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2010_alcohol_consumption_by_country.csv', function(err, rows) {
     function unpack(rows, key) {
+        console.log(rows);
         return rows.map(function(row) { return row[key]; });
     }
     console.log(unpack(rows, 'postal'));
